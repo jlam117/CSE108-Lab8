@@ -1,0 +1,11 @@
+{% extends 'admin/master.html' %}
+{% block body %}
+<h2>ACME University Admin</h2>
+<p>Use the menu above to create, read, update and delete data:</p>
+<ul>
+    <li><a href="{{ url_for('user.index_view') }}">Users</a> (students, teachers, admins)</li>
+    <li><a href="{{ url_for('course.index_view') }}">Courses</a></li>
+    <li><a href="{{ url_for('enrollment.index_view') }}">Enrollments / Grades</a></li>
+</ul>
+<p><a href="/">Back to the main app</a></p>
+{% endblock %}
